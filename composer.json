@@ -17,7 +17,7 @@
     "matryoshka-model/mongo-wrapper": "0.8.*@dev",
     "matryoshka-model/zf2-matryoshka-module": "0.8.*@dev",
     "matryoshka-model/zf-apigility-matryoshka": "dev-develop",
-    "strapieno/str-nightclub-model" : "dev-develop",
+    "strapieno/str-place-model" : "dev-develop",
     "ripaclub/zf-apigility-imgman" : "~0.4"
   },
   "require-dev": {
@@ -28,8 +28,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Strapieno\\NightClubCover\\Model\\": "src/",
-      "Strapieno\\NightClubCover\\ModelTest\\": "tests/"
+      "Strapieno\\PlaceGallery\\Model\\": "src/",
+      "Strapieno\\PlaceGallery\\ModelTest\\": "tests/"
     },
     "classmap": [
       "./Module.php"
