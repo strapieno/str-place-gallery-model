@@ -23,7 +23,7 @@ trait GalleryReferenceAwareTrait
      * @param GalleryReference $galleryReference
      * @return $this
      */
-    public function setPlaceReference(GalleryReference $galleryReference)
+    public function setGalleryReference(GalleryReference $galleryReference)
     {
         $this->galleryReference = $galleryReference;
         return $this;
