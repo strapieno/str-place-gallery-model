@@ -1,19 +1,21 @@
 <?php
 namespace Strapieno\PlaceGallery\Model\Entity\Reference;
 
+use Strapieno\Utils\Model\Object\EntityReference\EntityReferenceInterface;
+
 /**
  * Interface GalleryReferenceAwareInterface
  */
 interface GalleryReferenceAwareInterface
 {
     /**
-     * @return GalleryReference|null
+     * @return EntityReferenceInterface|null
      */
     public function getGalleryReference();
 
     /**
-     * @param GalleryReference $galleryReference
+     * @param EntityReferenceInterface $galleryReference
      * @return $this
      */
-    public function setGalleryReference(GalleryReference $galleryReference);
+    public function setGalleryReference(EntityReferenceInterface $galleryReference);
 }

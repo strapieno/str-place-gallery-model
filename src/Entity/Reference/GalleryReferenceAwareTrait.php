@@ -1,18 +1,20 @@
 <?php
 namespace Strapieno\PlaceGallery\Model\Entity\Reference;
 
+use Strapieno\Utils\Model\Object\EntityReference\EntityReferenceInterface;
+
 /**
  * Class GalleryReferenceAwareTrait
  */
 trait GalleryReferenceAwareTrait
 {
     /**
-     * @var GalleryReference|null
+     * @var EntityReferenceInterface|null
      */
     protected $galleryReference;
 
     /**
-     * @return GalleryReference|null
+     * @return EntityReferenceInterface|null
      */
     public function getGalleryReference()
     {
@@ -20,10 +22,10 @@ trait GalleryReferenceAwareTrait
     }
 
     /**
-     * @param GalleryReference $galleryReference
+     * @param EntityReferenceInterface $galleryReference
      * @return $this
      */
-    public function setGalleryReference(GalleryReference $galleryReference)
+    public function setGalleryReference(EntityReferenceInterface $galleryReference)
     {
         $this->galleryReference = $galleryReference;
         return $this;
